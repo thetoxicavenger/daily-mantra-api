@@ -1,9 +1,17 @@
 {
-  "name": "api",
+  "name": "daily-mantra-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.17.3",
     "mongoose": "^6.2.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon index",
+    "start": "NODE_ENV=production node index"
   }
 }
